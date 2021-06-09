@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>converter</title>
+</head>
+<body>
+    <script>
+        var courseDollar = 73.13;
+        var courseEuro = 87.92;
+        var amountInRubles = Number(prompt ("Сколько рублей вы хотите сконвертировать?", 1000));
+        var amountInDollars = Math.trunc (amountInRubles / courseDollar * 100) / 100;
+        var amountInEuro = Math.trunc (amountInRubles / courseEuro * 100) / 100;
+        alert(`Вы за свои ${amountInRubles} получите ${amountInDollars} долларов или ${amountInEuro} евро`);
+    </script>
+</body>
+</html>
